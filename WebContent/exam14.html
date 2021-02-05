@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<ul>
+		<li id="first" class="red">첫번째 아이템입니다.</li>
+		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li id="third" class="yellow">세번째아이템입니다.</li>
+		<li class = "violet"><strong>네번째 아이템입니다.</strong></li>
+		
+	</ul>
+
+</body>
+	<script type="text/javascript">
+	/*
+		$("li").on("click", function(){
+			
+			var tags = $(this)
+			var txt = tags.text();
+			var html = tags.html();
+			var val = tags.val();
+			
+			console.log(tags.target.id);
+		
+			
+		})
+	*/
+		
+		$("li").on("click", function(){
+			
+			var tags = $(this);
+			
+			tags.text("강용수");
+			var cls = tags.attr("class");
+			
+			$("li").css("color", cls);
+			
+		})
+		
+		
+		
+		
+	</script>
+
+
+</html>

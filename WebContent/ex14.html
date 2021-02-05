@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+	<html>
+	
+	
+	
+		<head>
+			
+			<meta charset="UTF-8">
+	
+			<title>Insert title here</title>
+			
+	
+			
+		</head>
+		
+		
+		
+		<body>
+			
+			<h1>이벤트</h1>	
+			
+			<h2>1.</h2>
+			<h2>2.</h2>
+			<h2>3.</h2>
+			
+			<h3 class="h3">3-1</h3>
+			<h3 class="h3">3-2</h3>
+			
+			
+			<div>
+			
+				<button id="btn">테스트</button>
+			
+			</div>
+			
+			<p id="p"></p>
+			
+			<p id="p1"></p>
+			
+			
+			<script>
+			
+		
+			
+			
+			
+			//문서가 로딩되었을 때 원하는 작업 실행
+				window.onload = function(){
+					
+					var test = document.getElementById("btn");
+					
+					var h3Arr = document.getElementsByClassName("h3");
+					
+					var display = document.getElementById("p");
+					
+					test.onclick = function(){
+						display.innerHTML="강용수";
+					}
+					
+					h3Arr[0].onclick = function(){
+						p.innerHTML= "3-1"; 
+						p1.innerHTML="권은봉";
+					}
+					
+					h3Arr[1].onclick = function(){
+						p.innerHTML = "3-2";
+						p1.innerHTML = "강용수";
+					}
+					
+					
+					
+				}
+		
+			
+
+			
+					
+			</script>
+			
+				
+			
+		</body>
+		
+		
+		
+	</html>
